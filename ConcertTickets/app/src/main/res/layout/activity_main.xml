@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="269dp"
+        android:layout_marginBottom="231dp"
         android:text="@string/btnCost"
         android:textSize="34sp" />
 
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="213dp"
+        android:layout_marginBottom="182dp"
         android:textSize="22sp" />
 
     <ImageView
