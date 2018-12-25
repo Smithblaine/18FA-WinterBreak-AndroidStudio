@@ -10,8 +10,13 @@
         android:id="@+id/imgWillis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:contentDescription="@string/willis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/bridge"
-        tools:layout_editor_absoluteX="27dp"
         tools:layout_editor_absoluteY="5dp" />
 </android.support.constraint.ConstraintLayout>
