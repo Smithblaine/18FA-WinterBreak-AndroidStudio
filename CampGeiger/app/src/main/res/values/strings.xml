@@ -3,9 +3,10 @@
     <string name="activity">Camp Activity Selection</string>
 
     <string-array name="activities">
-        <item>Help</item>
         <item>me</item>
         <item>do</item>
+        <item>Help</item>
         <item>this</item>
     </string-array>
+    <string name="tester">Hello world\n\n\ni need this\n to work</string>
 </resources>

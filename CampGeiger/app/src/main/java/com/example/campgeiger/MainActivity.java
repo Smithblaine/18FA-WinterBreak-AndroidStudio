@@ -1,21 +1,22 @@
 package com.example.campgeiger;
 
-import android.app.Dialog;
+import android.app.AlertDialog;
 import android.content.Context;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    final Context text = this;
+    final Context context  = this;
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -29,16 +30,31 @@ public class MainActivity extends AppCompatActivity {
         activities.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String Text = String.valueOf(parent.getSelectedItem());
-                Toast.makeText(getApplicationContext(), Text,Toast.LENGTH_LONG).show();
+                String Text = String.valueOf(parent.getSelectedItem().toString());
 
-                final AlertDialog dialog = new AlertDialog(text);
-                dialog.setContentView(R.layout.custom);
+                final AlertDialog.Builder dialog = new AlertDialog.Builder(context);
 
-                if (Text.contentEquals("Help")){
-                    dialog.setMessage("hello");
+                if (Text.equals("Help")){
+                    setContentView(R.layout.custom);
+                    dialog.setTitle(R.string.app_name);
+                    dialog.setMessage(R.string.tester);
+
+                    dialog.setPositiveButton("Exit", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                            setContentView(R.layout.activity_main);
+
+                            MainActivity.super.recreate();
+                        }
+                    });
+
+                    dialog.create();
                     dialog.show();
+
                 }
+
+
             }
 
             @Override
@@ -48,3 +64,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+
