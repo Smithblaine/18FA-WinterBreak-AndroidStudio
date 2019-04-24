@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">CampGeiger</string>
+    <string name="app_name">Camp Geiger Activities</string>
+    <string name="activity">Camp Activity Selection</string>
+
+    <string-array name="activities">
+        <item>Help</item>
+        <item>me</item>
+        <item>do</item>
+        <item>this</item>
+    </string-array>
 </resources>
