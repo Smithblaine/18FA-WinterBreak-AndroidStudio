@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
-
+        final AlertDialog.Builder dialog = new AlertDialog.Builder(context);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -31,14 +31,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String Text = String.valueOf(parent.getSelectedItem().toString());
+                buildDialog(Text);
+            }
 
-                final AlertDialog.Builder dialog = new AlertDialog.Builder(context);
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
 
-                if (Text.equals("Help")){
+            public void buildDialog(String text){
+                if (text.equals("Help")){
                     setContentView(R.layout.custom);
                     dialog.setTitle(R.string.app_name);
                     dialog.setMessage(R.string.tester);
-
                     dialog.setPositiveButton("Exit", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -48,18 +52,9 @@ public class MainActivity extends AppCompatActivity {
                             MainActivity.super.recreate();
                         }
                     });
-
                     dialog.create();
                     dialog.show();
-
                 }
-
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
             }
         });
     }
