@@ -1,12 +1,71 @@
 <resources>
     <string name="app_name">Camp Geiger Activities</string>
     <string name="activity">Camp Activity Selection</string>
-
     <string-array name="activities">
-        <item>me</item>
-        <item>do</item>
-        <item>Help</item>
-        <item>this</item>
+        <item>Select your activity</item>
+        <item>Animal Science MB</item>
+        <item>Archaeology MB</item>
+        <item>Archery MB</item>
+        <item>Astronomy MB</item>
+        <item>Automotive Maintenance MB</item>
+        <item>Basketry and Textile MB</item>
+        <item>Beginning Swimmer MB</item>
+        <item>Bird Study MB</item>
+        <item>COPE MB</item>
+        <item>Camping MB</item>
+        <item>Canoeing MB</item>
+        <item>Chess MB</item>
+        <item>Citizenship in the Community MB</item>
+        <item>Citizenship in the Nation MB</item>
+        <item>Citizenship in the World MB</item>
+        <item>Climbing MB</item>
+        <item>Communication MB</item>
+        <item>Cooking MB</item>
+        <item>Cycling MB</item>
+        <item>ELITE MB</item>
+        <item>Electricty MB</item>
+        <item>Emergency Preparedness MB</item>
+        <item>Environmental Science MB</item>
+        <item>Extra Swimming / Lifesaving MB</item>
+        <item>Fingerprinting and Crime Prevention MB</item>
+        <item>First Aid MB</item>
+        <item>First Class Trail MB</item>
+        <item>Fish and Wildlife and Forestry MB</item>
+        <item>Fishing MB</item>
+        <item>Fly Fishing MB</item>
+        <item>Geology and Soil and Water Conservation MB</item>
+        <item>Golf MB</item>
+        <item>Indian Lore MB</item>
+        <item>Johnny Fry MB</item>
+        <item>Kayaking MB</item>
+        <item>Leatherwork MB</item>
+        <item>Leave No Trace MB</item>
+        <item>Lifesaving MB</item>
+        <item>Metalwork MB</item>
+        <item>Mic-O-Say MB</item>
+        <item>Mile Swim MB</item>
+        <item>Music MB</item>
+        <item>Non-Swimmer MB</item>
+        <item>Oceanography and Weather MB</item>
+        <item>Orienteering MB</item>
+        <item>Paddle Craft Safety Training MB</item>
+        <item>Personal Fitness MB</item>
+        <item>Personal Management MB</item>
+        <item>Photography MB</item>
+        <item>Plumbing MB</item>
+        <item>Pottery and Sculpture MB</item>
+        <item>Radio MB</item>
+        <item>Reptile and Amphibian Study MB</item>
+        <item>Rifle Shooting (.22 cal) MB</item>
+        <item>Rowing MB</item>
+        <item>Search and Rescue MB</item>
+        <item>Shotgun Shooting MB</item>
+        <item>Space Exploration MB</item>
+        <item>Sustainability MB</item>
+        <item>Swimming MB</item>
+        <item>Swimming and Water Rescue Training MB</item>
+        <item>Wilderness Survival MB</item>
+        <item>Woodcarving MB</item>
     </string-array>
     <string name="tester">Hello world\n\n\ni need this\n to work</string>
 </resources>

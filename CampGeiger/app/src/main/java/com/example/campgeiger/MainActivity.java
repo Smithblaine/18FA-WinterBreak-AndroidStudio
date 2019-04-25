@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             public void buildDialog(String text){
-                if (text.equals("Help")){
+                if (text.equals("Animal Science MB")){
                     setContentView(R.layout.custom);
                     dialog.setTitle(R.string.app_name);
                     dialog.setMessage(R.string.tester);
