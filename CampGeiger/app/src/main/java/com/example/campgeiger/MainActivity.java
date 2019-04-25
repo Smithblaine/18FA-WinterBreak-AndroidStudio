@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mydb = new DatabaseHelper(this);
+        mydb.insertData();
 
         Spinner activities = (Spinner) findViewById(R.id.spinner1);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this,android.R.layout.simple_spinner_dropdown_item, getResources().getStringArray(R.array.activities));
